@@ -1,6 +1,10 @@
 public class GeometriaEspacial {
     public double Pi = 3.14;
 
+    public void setPi(double pi) {
+        Pi = pi;
+    }
+
     //métodos prisma
     public double prismaAl(int nlados, double face) {
         return nlados * face;
