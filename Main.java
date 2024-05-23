@@ -7,32 +7,74 @@ public class Main {
         GeometriaEspacial ge = new GeometriaEspacial();
 
         while (true) {
-            System.out.println("\nSeja Bem Vindo a calculadora geometrica, selecione uma opção:\n1-Geometria Plana\n2-Geometria Espacial\n3-Trocar valor de PI\n4-Fechar Programa");
+            System.out.println("\nSeja Bem Vindo a calculadora geometrica feita por Pedro e Christian, selecione uma opção:\n1-Geometria Plana\n2-Geometria Espacial\n3-Trocar valor de PI\n4-Fechar Programa");
             int opGeo = Integer.parseInt(sc.nextLine());
 
             switch (opGeo) {
                 case 1:
+                    System.out.println("\nEscolha a figura geometrica plana:\n1-Quadrado\n2-Retangulo\n3-Triângulo\n4-Triângulo equilátero\n5-Paralelograma\n6-Losango\n7-Trapézio\n8-Círculo");
                     int opGP = Integer.parseInt(sc.nextLine());
-                    switch (opGP) {
+                    switch (opGP) 
+                    {
                         case 1:    
-                        
+                            System.out.println("\nValor do lado: ");
+                            double pQ = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nO valor do perimetro do quadrado é: " + gp.pQ(pQ) + "\nA sua área é: " + gp.aQ(pQ) );
                             break;
-                    
                         case 2:
-
+                            System.out.println("\nValor do lado: ");
+                            double pR = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nValor da altura: ");
+                            double hR = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nO valor do perimetro do retangulo é: " + gp.pR(pR, hR) + "\nA sua área é: " + gp.aR(pR, hR));
                             break;
                         case 3:
-
+                            System.out.println("\nNúmero do lado A: ");
+                            double aT = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nNúmero do lado B: ");
+                            double bT = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nNúmero do lado C: ");
+                            double cT = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nO valor do perimetroo triângulo é: " + gp.pT(aT, bT, cT) + "\nA sua área é: " + gp.pT(aT, bT, cT));
                             break;
                         case 4:
-
+                            System.out.println("\nNúmero do lado: ");
+                            double l = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nO valor do perimetro do triângulo equilátero é: " + gp.pTE(l) + "\nA sua área é: " + gp.aTE(l));
                             break;
                         case 5:
-
+                            System.out.println("\nNúmero do lado A: ");
+                            double a = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nNúmero do lado B: ");
+                            double b = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nO valor do perimetro do paralelograma é: " + gp.pP(a, b) + "\nA sua área é: " + gp.aP(a, b));
                             break;
                         case 6:
-                        
+                            System.out.println("\nValor do lado: ");
+                            double al = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nValor da altura: ");
+                            double d = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nValor da largura: ");
+                            double D = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nO valor do perimetro do losango é: " + gp.pL(al) + "\nA sua área é: " + gp.aL(D, d));
                             break;
+                        case 7:
+                            System.out.println("\nValor do lado esquerdo: ");
+                            double ct = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nValor do lado direito: ");
+                            double dt = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nValor da base menor: ");
+                            double bt = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nValor da base maior: ");
+                            double Bt = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nValor da altura: ");
+                            double ht = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nO valor do perimetro do trapézio é: " + gp.pTR(ct, dt, bt, Bt) + "\nA sua área é: " + gp.aTR(bt, Bt, ht));
+                            break;
+                        case 8:
+                            System.out.println("\nValor do raio: ");
+                            double r = Double.parseDouble(sc.nextLine());
+                            System.out.println("\nO valor do perimetro do circulo é: " + gp.pC(r) + "\nA sua área é: " + gp.aC(r));
                     }
                     break;
                 case 2:
