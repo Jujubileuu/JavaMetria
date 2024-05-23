@@ -34,21 +34,21 @@ public class GeometriaPlana {
     }
     public Double pP(double a, double b){
         return 2 * a + 2 * b; // PERIMETRO//
-        // T = TRIANGULO E A,B,C = VALOR DOS LADOS//
+        // T = PARALELOGRAMA E A,B,C = VALOR DOS LADOS//
     }
     public Double aP(double a, double h){
-        return a * h / 2; //AREA//
-        // T = TRIANGULO E A,B,C = VALOR DOS LADOS//
+        return a * h; //AREA//
+        // T = PARALELOGRAMA E A,B,C = VALOR DOS LADOS//
     }
     public Double pL(double a){
         return 4 * a; // PERIMETRO//
-        //L = Losangulo a = VALOR DOS LADO d = ALTURA D = LARGURA//
+        //L = Losango a = VALOR DOS LADO d = ALTURA D = LARGURA//
     }
     public Double aL(double D, double d){
         return D * d / 2; //AREA//
-        //L = Losangulo a = VALOR DOS LADO d = ALTURA D = LARGURA//
+        //L = Losango a = VALOR DOS LADO d = ALTURA D = LARGURA//
     }
-    public Double pTR(double c, double d, double b, double B,double h){
+    public Double pTR(double c, double d, double b, double B){
         return c + d + b + B; // PERIMETRO//
         //TR = TRAPEZIO C = VALOR DO LADO ESQUERDO d = VALOR DO LADO DIREITO b = BASE MENOR B = BASE MAIOR H = ALTURA//
     }
