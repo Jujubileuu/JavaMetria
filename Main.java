@@ -110,7 +110,7 @@ public class Main {
                             double ladoPiramide = Double.parseDouble(sc.nextLine());
                             System.out.println("\nValor da altura: ");
                             double alturaPiramide = Double.parseDouble(sc.nextLine());
-                            System.out.println("\nInforme o poligono da base sem acento: ");
+                            System.out.println("\nInforme o poligono da base (quadrado, retangulo ou triangulo) sem acento: ");
                             String poligonoBase = sc.nextLine();
 
                             double areabPiramide = ge.piramideAb(poligonoBase, ladoPiramide, alturaPiramide);
